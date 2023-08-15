@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,400;8..144,600&family=Roboto+Mono:ital,wght@1,600&display=swap');
+
+/*
+    Em CSS, o "id", do HTML, é representado por "#" --> repetir 01 id por documento.
+    Em CSS, a "class", do HTML é representada por "." --> pode repetir várias classes por documento.
+
+    Hierarquia --> herdar atributos de seletores genéricos, classes e id.
+        Ordem: seletor genérico --> class --> id.
+    Caso algum atributo repita entre eles, o seletor mais perto do "fim" sobscreve.
+*/
+
+body {
+    font-family: 'Roboto Flex', 'Arial', sans-serif;
+    text-align: justify;
+    background-image: linear-gradient(to bottom,  #f0fcfd, white);
+}
+
+h1 {
+    font: 600 2em 'Roboto Flex', 'Arial', sans-serif;
+    color: #13C4A3;
+    text-align: center;
+}
+
+h2 {
+    font: 600 1.5em 'Roboto Flex', 'Arial', sans-serif;
+    color: #4C6085;
+}
+
+p {
+    text-indent: 16px;
+}
+
+h1#principal {
+    font: 600 3em 'Roboto Flex', 'Arial', sans-serif;
+    color: #36F1CD;
+    background-color: #32322C;
+}
+
+.destaque {
+    background-color: rgba(123, 255, 237, 0.658);
+}

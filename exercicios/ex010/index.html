@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com links</title>
+</head>
+<body>
+    <h1>Trabalhando com links</h1>
+    <p>Links são uma das ferramentas mais antigas do HTML, são eles que permitem a navegação entre telas, dowload de outros arquivos, sistema de buscas entre muitas outros coisas. Para utilizá-los, primeiro precisa-se definir uma <strong>âncora</strong>, isto é, um ponto clicável que faz referência ao link a ser clicado. Dessa forma, envelopamos a nossa "âncora" com a tag <em>&lt;a&gt;</em> e em seu atributo <em>href</em> colocamos a URL completa/caminho do arquivo que desejamos exibir na tela.</p>
+
+    <h2>Links externos:</h2>
+    <p>Links externos são aqueles que não fazem parte do nosso site. Por padrão, após clicar em um hyperlink, nosso navegador sobrepõe a página antiga com a nova. Isto não é interessante quando nos tratamos de links externos, uma vez que, dificulta o retorno do usuário ao nosso site. Portanto, como possível solução, podemos adicionar mais outros 02 atributos <em>target</em> e <em>rel</em></p>:
+    <p>Aqui um exemplo de <a href="https://www.cursoemvideo.com/curso/html5-css3-modulo1/aulas/modulo-1-2/modulos/capitulo-10-aula-1-links-e-ancoras-em-html5/" target="_blank" rel="external">link externo</a></p>
+    <h2>Links internos:</h2>
+    <p>Links internos são links que fazem parte do mesmo site. A principal diferença entre eles é o caminhamento com o <em>href</em>, devendo informar o nome do arquivo <em>html</em> e caminho, caso necessário. Também podemos deixar o código mais semântico alterando o <em>target</em> (_self) e o <em>rel</em>(next ou prev).</p>
+    <p>Clique <a href="pag2.html" target="_self" rel="next" lang="pt-br">aqui</a> para ir para a página 02.</p>
+    <p>Clique <a href="newspaper/pag3.html" target="_self" rel="next" lang="pt-br">aqui</a> para acessar nossa página de notícias, dentro de outra pasta.</p>
+    <p>O atributo <em>lang</em> em <em>&lt;a&gt;</em>, informa qual será o idioma da próxima página, a fim de "preparar" o navegador.</p>
+    <h2>Dowloads:</h2>
+    <p>É possível criar âncoras que levem a um dowload, ainda com a tag <em>&lt;a&gt;</em>, adicionando as tags <em>dowload</em> e <em>type</em>, que definem qual será baixado e qual o formato dele, respectivamente.</p>
+    <p>Clique <a href="src/files/10 - Ligações em toda parte.pdf" download="10 - Ligações em toda parte.pdf" type="application/pdf">aqui</a> para baixar a apostila</p>
+    <p>Clique <a href="src/files/10 - Ligações em toda parte.zip" download="10 - Ligações em toda parte.zip" type="application/zip">aqui</a> para baixar a apostila compactada</p>
+    <p><strong>Obs:</strong>o <em>type</em> é um para cada formato, para mais informações acesse <a href="https://www.iana.org/assignments/media-types/media-types.xhtml" target="_blank" rel="nofollow" lang="en">aqui</a></p> 
+</body>
+</html>

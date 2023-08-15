@@ -1,0 +1,20 @@
+@charset "UTF-8"; /*REGRA PARA UTILIZAR UTF-8 A FIM DE EVITAR PROBLEMAS COM ACENTUAÇÃO*/
+
+body{
+    background-color: lightskyblue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+h1{
+    color: azure;
+    background-color: gray;
+}
+
+h2{
+    color: grey;
+}
+
+p{
+    text-align: justify;
+}

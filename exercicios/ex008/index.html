@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatação de Textos</title>
+    <!--CSS ativo em todos os <mark> (geral)-->
+    <style>
+        mark {
+            background-color: rgb(150, 199, 150);
+        }
+    </style>
+</head>
+<body>
+    <h1>Pricipais formatações</h1>
+    <h2>Negrito/Destaque</h2>
+    <p>Nesta frase, temos um <b>termo em negrito</b>, usando a tag &lt;b&gt; (não semântica)</p>
+    <p>Nesta frase, temos um <strong>termo em destaque</strong>, usando a tag &lt;strong&gt; (semântica)</p>
+    <h2>Itálico/Ênfase</h2>
+    <p>Nesta frase, temos um <i>termo em itálico</i>, usando a tag &lt;i&gt; (não semântica)</p>
+    <p>Nesta frase, temos um <em>termo em ênfase</em>, usando a tag &lt;em&gt; (semântica)</p>
+    <h2>Efeito de marca texto</h2>
+    <p>Podemos criar, também, um efeito de <mark style="background-color: aquamarine;">marca texto</mark>, com a tag &lt;mark&gt; (semântico, com CSS exclusivo para <strong>ESTA</strong> tag)</p> <!--CSS exclusivo para esta tag-->
+    <p>É possível criar este efeito com CSS geral (cabeçalho da página), como visto <mark>aqui</mark>!!!</p>
+    <h2>Texto grande e pequeno</h2>
+    <p>É possível aumentar o tamanho de um texto com a tag &lt;big&gt;, como visto <big>aqui</big>. Também é possível <small>reduzí-lo</small>, com o &lt;small&gt;. Vale lembrar que o &lt;big&gt; é obsoleto, diferente do &lt;small&gt;.</p>
+    <h2>Texto deletado e inserido</h2>
+    <p>Também é possível deletar um texto, com a tag &lt;del&gt; (semântica, ao contrário do &lt;stroke&gt;), visível <del>aqui</del>.<br>Em contrapartida, ao &lt;del&gt;, temos o &lt;ins&gt;, que <ins>"insere" o texto</ins> (deixa sublinhado, sendo semântico)</p>
+    <h2>Texto subscrito e sobescrito</h2>
+    <p>Podemos também, subscrever um texto (deixá-lo no formato de molécula), com a tag &lt;sub&gt;: H<sub>2</sub>0.<br>Já, caso queira sobrescrever um texto (potenciação, por exemplo), podemos usar a tag &lt;sup&gt;:2<sup>(2+x)</sup> = 5</p>
+</body>
+</html>

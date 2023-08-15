@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+</head>
+<body>
+    <h1>Trabalhando com listas</h1>
+    <h2>Listas ordenadas:</h2>
+    <p>São aquelas em que a ordem importa, tendo que seguir um padrão. Para utilizá-las é necessário a tag <em>&lt;ol&gt;</em>. É possível personalizar sua lista com o <em>atributo</em> type (que indica se sua lista seguirá padrão de números, letras ou algarismos romanos, nestes 02 últimos casos, podendo estarem maiúsculas ou não). Então, para adicionar o texto, basta adicionar a tag &lt;li&gt;, antes do que deseja inserir na lista:</p>
+    <ol type="I">
+        <li>Acordar</li>
+        <li>Tomar banho</li>
+        <li>Pegar o onibus</li>
+        <li>Trabalhar</li>
+        <li>Voltar para casa</li>
+        <li>Tomar outro banho</li>
+        <li>Estudar</li>
+        <li>Ir dormir</li>
+    </ol>
+    <p><strong>Obs:</strong>Vale lembrar que o atributo <em>start</em>, em &lt;ol&gt;, indica qual será  a posição inicial da sua lista</p>
+    <h2>Listas não ordenadas</h2>
+    <p>Mesmo princípio da lista ordenada, a diferença é que a ordem não importa, tendo, também, o atributo <em>type</em>, que edita como será exibído (disc, circle, square). Para usá-la, basta utilizar a tag <em>&lt;ul&gt;</em>:</p>
+    <ul type="square">
+        <li>Adicionar gastos de materiais de limpeza na planilha</li>
+        <li>Levar gaiola de manta sem etiqueta no acabamento</li>
+        <li>Fazer controle semanal de ocorrêrncias</li>
+    </ul>
+    <p><strong>Obs:</strong>por algum motivo, o atributo <em>type</em> não se autocompletou... Porem, funcionou sem problemas</p>
+    <h2>Lista dos meus jogos favoritos</h2>
+    <ul>
+        <li>PC:</li>
+        <ol>
+            <li>Tomb Raider (série nova)</li>
+            <ul type="square">
+                <li>Rise of the Tomb Raider</li>
+                <li>Tomb Raider</li>
+            </ul>
+            <li>The Witcher</li>
+            <ul type="square">
+                <li>The Witcher 3</li>
+            </ul>
+            <li>Dark Souls</li>
+            <ul type="square">
+                <li>Dark Souls III</li>
+            </ul>
+        </ol>
+        <li>PS2:</li>
+        <ol>
+            <li>God of War</li>
+            <ul type="square">
+                <li>God of War II</li>
+            </ul>
+            <li>Dragon Ball</li>
+            <ul type="square">
+                <li>Dragon Ball Z AF</li>
+            </ul>
+        </ol>
+    </ul>
+    <h2>Lista de Definições</h2>
+    <p>Não foge muito do que o nome já diz, seguindo os mesmos princípios das listas acima. Para definí-la utilizamos a tag <em>&lt;dl&gt;</em>. Dentro da tag, definimos o termo (&lt;dt&gt;) e sua descrição (&lt;dd&gt;). Esse divisão entre palavra e significado auxilia os mecanismos de busca.</p>
+    <dl>
+        <dt>HTML</dt>
+        <dd>Uma linguagem de marcação que tem como foco gerar o conteúdo de uma página web</dd>
+
+        <dt>CSS</dt>
+        <dd>Uma linguagem de marcação que tem como objetivo estilizar uma página web</dd>
+
+        <dt>JavaScript</dt>
+        <dd>Uma linguagem de programação, que pode ser utilizada para adicionar interatividade a página, como animações, menus, etc.</dd>
+    </dl>
+</body>
+</html>

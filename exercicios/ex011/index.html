@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Mídias em HTML5:</h1>
+    <h2>Imagem dinâmica:</h2>
+    <p>Uma imagem com dimensões variáveis é muito útil quando nos tratamos de responsividade, uma vez que, permite uma maior adaptação do site em diferentes plataformas (smartphone, tablet e PC, por exemplo). Para inserí-las, regatamos a tag <em>&lt;img&gt;</em>, porem, desta vez a envelopamos com a tag <em>&lt;picture&gt;</em>. Dentro desta tag, também adicionamos outra (<em>&lt;source&gt;</em>), que permite definir qual dimensão máxima/mínima (neste caso, a largura) para exibir uma imagem, graças a seu atributo <em>media</em>, alem disso, também é passado como "parâmetro" o caminho da imagem (<em>srcset</em>) e o tipo (<em>type</em>) dela.</p>
+    <p>Aumente e diminua o tamanho para perceber.</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="src/images/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="src/images/foto-m.png" type="image/png">
+        <img src="src/images/foto-g.png" alt="Imagem responsiva">
+    </picture>
+    <h2>Adicionando audios:</h2>
+    <p>Para inserir aúdios em HTML5 é bem simples, basta envelopar a tag <em>&lt;source&gt;</em> (vista acima), com outra tag: <em>&lt;audio&gt;</em>. Nela devemos utilizar alguns atributos, sendo o primeiro deles o <em>preload</em>, que possui 03 opções:</p>
+    <ul>
+        <li><em>auto</em>, que carrega o audio ao abrir o site, mesmo que o usuário nunca ouça-o (não recomendado);</li>
+        <li><em>metadata</em>, que carrega apenas algumas informações (mais leve), permitindo assim, caso necessário, uma execução mais rápida;</li>
+        <li><em>none</em>, que não carrega nada do audio até que o usuário execute-o. Esta é uma estratégia mais efeciente quando a ideia é poupar banda do cliente, porem, ocasiona uma maior espera do cliente até que o aúdio seja executado.</li>
+    </ul>
+    <p>Além deste atributo, devemos adiconar também o <em>constrols</em>, que permite visualizar um player e o <em>loop</em>, que reinicia o aúdio após seu término.</p>
+    <p>Importante ressaltar que, é interessante adicionar vários <em>&lt;source&gt;</em>'s, como diferentes formatos de aúdio, uma vez que, o navegador que a pessoa está utilizando pode não ter suporte aquele tipo de arquivo. Alem disso, é bacana deixar um <em>&lt;p&gt;</em>, dentro do <em>&lt;audio&gt;</em>, com o link do dowload do som, caso o navegador não tenha suporte a nenhum dos formatos.</p>
+    <audio preload="metadata" controls loop>
+        <source src="src/media/audios/compilado-do-rodrigo-goes-falando-chris-bumstead.mp3" type="audio/mpeg">
+        <source src="src/media/audios/compilado-do-rodrigo-goes-falando-chris-bumstead.ogg" type="audio/ogg">
+        <source src="src/media/audios/compilado-do-rodrigo-goes-falando-chris-bumstead.wav" type="audio/wav">
+        <p>Seu navegador não possui suporte aos formatos: mp3, ogg e wav. Clique <a href="src/media/audios/compilado-do-rodrigo-goes-falando-chris-bumstead.zip" download="compilado-do-rodrigo-goes-falando-chris-bumstead.zip" type="application/zip">aqui</a> para baixar o audio...</p>
+    </audio>
+</body>
+</html>

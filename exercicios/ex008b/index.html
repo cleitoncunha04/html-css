@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outras formatações</title>
+</head>
+<body>
+    <h1>Outras formatações</h1>
+    <h2>Código-Fonte com Pré-formatação</h2>
+    <p>
+        Para deixar o texto monoespaçado, isto é, todas os caracteres ocupando o mesmo espaço, basta utilizar a tag &lt;code&gt;: 
+        <code>var a = 2 + 4.0</code>
+    </p>
+    <p>Importante ressaltar, que o &lt;code&gt; não mantem a identação do código. Para isso, é necessário utilizar a tag &lt;pre&gt;:
+        <pre>
+    <code>
+        bool verificarPar(int num)
+        {
+            bool isPar = false;
+            if(num % 2 == 0)
+            {
+                isPar = true;
+            }
+
+            return isPar;
+        }
+    </code>
+        </pre>
+    </p>
+    <p>Obs: o &lt;pre&gt; mantem <strong>TODOS</strong> os espaçamentos e quebras de linha dentro do arquivo HTML.</p>
+    <h2>Citação simples</h2>
+    <p>A citação simples é aquela em que deixamos o texto entre aspas. É possível fazer isso manualmente, mas a fim de deixar o código mais semântico, utilizamos a tag &lt;q&gt;: <q>É que cara cabeçudo atrai muita pika, mano</q></p>
+    <h2>Citação completa</h2>
+    <p>Esta é aquela presente nos artigos científicos e tals, aquelas que tem quebras de linha, quando a citação é mais longa. Para isso, utilizamos a tag &lt;blockqoute&gt;, na qual devemos informar a URL de origem: segundo Gustavo Guanabara, <blockquote cite="https://www.cursoemvideo.com/curso/html5-css3-modulo1/aulas/modulo-1-2/modulos/capitulo-8-aula-4-citacoes-e-codigos/">Você sabe como adicionar citações ao seu site? Sabe como representar um trecho de código dentro de uma página? Veja a resposta para todas essas perguntas assistindo esse vídeo até o final.</blockquote></p>
+    <h2>Abreviações</h2>
+    <p>É possível abreviar palavras, e criar uma espécie de onHover que exibe o termo sem estar abreviado, com a tag &lt;abbr&gt; e definindo o <em>title</em> como a termo completo: <abbr title="HyperText Markup Language">HTML</abbr></p>
+    <h2>Inverter palavras</h2>
+    <p>Por fim, e menos importante, é possível inverter palavras com a tag &lt;bdo&gt;, definindo o atributo <em>dir</em> como <strong>rtl</strong>: Casa &rarr; <bdo dir="rtl">Casa</bdo></p>
+</body>
+</html>

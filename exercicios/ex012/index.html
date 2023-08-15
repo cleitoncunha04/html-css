@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos em HTML5</title>
+</head>
+<body>
+    <h1>Vídeos em HTML5</h1>
+    <h2>Adicionando vídeos localmente:</h2>
+    <p>É possível adicionar vídeos no servidor local do site. Para isso, devemos ter o arquivo baixado, com uma extensão compatível ao navegador (.mp4/.m4v, .webm ou .ogv). Após isso, devemos utilizar a tag <em>&lt;video&gt;</em> e, assim como nas imagens dinâmicas, utilizar a tag <em>&lt;source&gt;</em>. É interessante ter vários <em>&lt;source&gt;</em>'s com o mesmo arquivo em diferentes extensões, a fim de adaptar o site a diferentes navegadores.</p>
+    <p><strong>Obs:</strong> não é recomendado utilizar vídeos locais, uma vez que, consome muito da hospedagem, encarecendo o serviço de hospedagem.</p>
+    <video controls width="700" poster="src/images/thumb.png" loop preload="none">
+        <source src="src/media/videos/meu-video.m4v" type="video/mp4">
+        <source src="src/media/videos/meu-video.mp4" type="video/mp4">
+        <source src="src/media/videos/meu-video.webm" type="video/webm">
+        <p>Seu navegador não possui suporte a nenhum dos formatos do vídeo.</p>
+    </video>
+    <h2>Adicionando vídeos externamente:</h2>
+    <p>É possível adicionar vídeos salvos em servidores externos, reduzindo o consumo de hospedagem do site. Como possíveis soluções temos o <em>Youtube</em> e <em>Vimeo</em>. Para isso, basta <em>selecionar o vídeo</em>, clicar em <em>compartilhar</em> e ir na opção <em>incoporar</em>. Após isso, só copiar os comandos HTML e colar em seu site.</p>
+    <iframe width="700" height="412" src="https://www.youtube.com/embed/_2C-7gG6zec" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    /* CSS possui Safe Fonts (CSS Web Safe Fonts Combination) */
+        body{
+            font-family: sans-serif;
+            /* medidas absolutas: cm, mm, in, px, pt, pc*/
+            /*medidas relativas: em, ex, rem,vw, vh, %*/
+            /*RECOMENDADO: px ou em. O "em" equivale a múltiplicação do valor pela fonte padrão, sendo mais adaptável*/
+            font-size: 1.5em;
+        }
+        h1{
+            /*
+            font-weight -> define a grossura da fonte, definido pelo atributo "font-weight", podendo ser aplicado nominalmente (lighter, normal, bold, bolder) ou numericamente (100 a 900). Vale lembrar que nem todas fontes possuem esses valores.
+
+            font-style: italic -> texo em itálico
+
+            text-decoration: underline -> texo sublinhado
+
+            shorthand (atalho na declaração) -> ordem: font-style font-weight font-size font-family
+            */
+            font: italic 900 2em 'Arial', sanserif; 
+        }
+        /* Aqui ele vai testando as fontes, já que o navegador pode ou não ter elas. A última é uma categoria, no caso, não serifada --> seleciona uma fonte genérica.*/
+        h2{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+    </style>
+    <title>Teste de fontes</title>
+</head>
+<body>
+    <h1>Teste de fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores ipsa accusamus illum, impedit vero provident similique dolorem rerum consequatur, architecto repellendus veritatis officia corporis quis ullam, alias non laboriosam iure! Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, quibusdam inventore? Sapiente mollitia vel autem, rerum quas, voluptatibus assumenda cupiditate id omnis tempora maxime, deserunt vitae dolores laudantium officia eveniet.</p>
+    <h2>Capítulo 01</h2>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus vero fugiat saepe soluta explicabo nobis veritatis placeat ut, adipisci, quisquam fugit provident nisi ex est debitis quis non veniam necessitatibus.</p>
+    <h2>Capítulo 02</h2>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores eos aliquam voluptatibus at delectus odio dignissimos explicabo alias nobis architecto natus minima quo nisi animi perspiciatis, ea fuga quibusdam reprehenderit!</p>
+</body>
+</html>
