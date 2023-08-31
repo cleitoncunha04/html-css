@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+html, body {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    height: 100vh;
+    background: url(../images/espaco.jpg) center center no-repeat fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+
+.centralizado {
+    align-self: center;
+}
